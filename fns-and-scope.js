@@ -37,7 +37,7 @@ var getName = function() {
 
   //Code Here
 var welcome = function() {
-  alert("Welcome " + getName() + "!");
+  alert("Welcome, " + getName());
 }
 
 welcome();
@@ -50,7 +50,8 @@ welcome();
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+// parameters are general names for arguments that allow your function to be used for more than one use.
+// parameters are in the () of the function arguments are in the function
 
 //Next problem
 
@@ -61,7 +62,8 @@ welcome();
 
   //Answer Here
 
-
+// undefined null NaN '' 0 false
+// if (something === false)
 
 //Next Problem
 
@@ -71,15 +73,20 @@ welcome();
 
   //Code Here
 
+var myName = function() {
+  return "JT";
+}
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 
+var newMyName = myName;
+
 //Now alert the result of invoking newMyName
 
-
+alert(newMyName());
 
 //Next problem
 
@@ -89,8 +96,18 @@ welcome();
 
   //Code Here
 
+  var outerFn = function() {
+    return function() {
+      return "JT";
+    };
+  };
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
 
+  var innerFn = outerFn();
+
 //Now invoke innerFn.
+
+innerFn();
