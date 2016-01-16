@@ -7,6 +7,14 @@ var name = 'Tyler';
 
   //Code Here
 
+  var isTyler = function(name) {
+    if(name === "Tyler") {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 //Next problem
 
 
@@ -15,7 +23,10 @@ var name = 'Tyler';
 
 
   //Code Here
-
+var getName = function() {
+  var userName = prompt("What is your name?")
+  return userName;
+}
 
 //Next Problem
 
@@ -25,7 +36,11 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+var welcome = function() {
+  alert("Welcome " + getName() + "!");
+}
 
+welcome();
 
 //Next problem
 
@@ -55,7 +70,7 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
+
 
 
 //Now save the function definition of myName into a new variable called newMyName
